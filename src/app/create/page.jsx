@@ -34,7 +34,8 @@ export default function Create() {
     };
 
     return (
-        <div className="h-screen flex justify-center items-center p-10">
+        <section className="h-screen flex flex-col justify-center items-center gap-10 p-10">
+            <h2 className="text-[28px]">Crea una nueva tarea</h2>
             <form className="bg-slate-800 p-10 rounded" onSubmit={handleSubmit}>
                 <label htmlFor="title" className="font-bold text-sm">
                     Título de la tarea
@@ -48,6 +49,6 @@ export default function Create() {
 
                 <input type="submit" value="Crear" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer" />
             </form>
-        </div>
+        </section>
     );
 }
