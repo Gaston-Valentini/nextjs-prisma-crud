@@ -16,9 +16,9 @@ export default function Home() {
     }, []);
 
     return (
-        <section className="container mx-auto">
+        <section className="container mx-auto p-10">
             <h2 className="text-[28px]">Tus tareas</h2>
-            <div className="grid grid-cols-3 gap-3 mt-10">{tasks ? tasks.map((task) => <Task key={task.id} id={task.id} title={task.title} description={task.description} createdAt={task.createdAt} />) : <div>Cargando tareas...</div>}</div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-10">{tasks ? tasks.map((task) => <Task key={task.id} id={task.id} title={task.title} description={task.description} createdAt={task.createdAt} />) : <div>Cargando tareas...</div>}</div>
         </section>
     );
 }
